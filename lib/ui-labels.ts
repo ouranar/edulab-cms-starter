@@ -1,0 +1,33 @@
+export const uiText = {
+  zh: {
+    all: "全部",
+    archive: "归档",
+    categories: "分类",
+    contactEntry: "联系入口",
+    details: "查看详情",
+    featured: "重点展示",
+    featuredMember: "重点成员",
+    featuredNews: "重点新闻",
+    featuredProject: "重点项目",
+    latestNews: "最新动态",
+    learnMore: "了解更多",
+    memberCount: "成员",
+    navigation: "主导航",
+    noContent: "暂无内容",
+    publicationOverview: "出版物概览",
+    recordCount: "条记录",
+    recordDirectory: "成果目录",
+    relatedLink: "相关链接",
+    researchFocus: "研究亮点",
+    source: "查看来源",
+    tags: "关键词",
+    viewAll: "查看全部",
+    viewArchive: "查看归档",
+    viewMembers: "查看成员",
+    viewNews: "查看新闻",
+    viewProjects: "查看项目",
+    visitProfile: "个人主页",
+  },
+} as const;
+
+export const text = uiText.zh;

@@ -1,0 +1,33 @@
+{
+  "name": "edulab-cms-starter",
+  "version": "0.1.0",
+  "description": "A JSON-driven lab website starter with a lightweight admin CMS.",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ouranar/edulab-cms-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ouranar/edulab-cms-starter/issues"
+  },
+  "homepage": "https://github.com/ouranar/edulab-cms-starter#readme",
+  "scripts": {
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.2"
+  }
+}

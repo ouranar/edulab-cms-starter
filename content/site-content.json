@@ -1,0 +1,588 @@
+{
+  "settings": {
+    "labName": "EduLab CMS Starter",
+    "shortName": "EduLab CMS",
+    "description": "A configurable website template for research labs, education technology groups, and academic teams.",
+    "footerNote": "Demo content for an open-source, file-driven lab website template.",
+    "adminLabel": "管理",
+    "newsArchiveMonths": 6,
+    "minimumNewsItems": 4
+  },
+  "navigation": [
+    { "label": "首页", "href": "/" },
+    { "label": "关于", "href": "/about" },
+    { "label": "新闻", "href": "/news" },
+    { "label": "成员", "href": "/members" },
+    { "label": "研究内容", "href": "/research" },
+    { "label": "出版物", "href": "/publications" },
+    { "label": "招募", "href": "/recruitment" },
+    { "label": "联系方式", "href": "/contact" }
+  ],
+  "home": {
+    "hero": {
+      "eyebrow": "EduLab CMS Starter",
+      "title": "EduLab CMS Starter",
+      "subtitle": "一个面向教育技术、学习分析与人工智能研究团队的开源网站框架。",
+      "description": "本模板使用 Next.js、本地 JSON 内容文件与轻量后台组成，适合快速搭建实验室官网、团队展示页、项目展示页和成果目录。所有内容都可以通过后台维护，也可以直接编辑 JSON 文件。",
+      "primaryAction": { "label": "About us", "href": "/about" },
+      "secondaryAction": { "label": "Research", "href": "/research" }
+    },
+    "activities": [
+      {
+        "id": "demo-activity-1",
+        "date": "2026-03-20",
+        "label": "活动",
+        "title": "示例工作坊：学习分析与智能反馈",
+        "summary": "用于展示新闻卡片、日期、分类和跳转方式的模拟内容。",
+        "href": "/news/demo-workshop"
+      },
+      {
+        "id": "demo-activity-2",
+        "date": "2026-03-06",
+        "label": "项目",
+        "title": "示例项目启动：课堂数据仪表盘",
+        "summary": "展示项目动态如何在首页与新闻页复用。",
+        "href": "/news/demo-dashboard"
+      },
+      {
+        "id": "demo-activity-3",
+        "date": "2026-02-18",
+        "label": "合作",
+        "title": "示例合作：跨学科教学研究",
+        "summary": "模拟团队与外部机构共同开展课程研究的消息。",
+        "href": "/news/demo-collaboration"
+      },
+      {
+        "id": "demo-activity-4",
+        "date": "2026-01-28",
+        "label": "招募",
+        "title": "示例招募：研究助理与学生成员",
+        "summary": "展示招募页面入口和新闻分类的关联方式。",
+        "href": "/recruitment"
+      }
+    ],
+    "intro": {
+      "title": "实验室概览",
+      "description": "模板首页的第一块内容。",
+      "buttonLabel": "了解更多",
+      "href": "/about",
+      "content": [
+        "本网站框架适合用于研究实验室、课题组、学术项目与教育技术团队。页面内容由本地 JSON 驱动，后台保存后会回写到内容文件。",
+        "你可以替换站点名称、导航、新闻、成员、研究方向、出版物、招募说明和联系方式，也可以保留当前结构作为设计原型继续开发。"
+      ]
+    },
+    "newsLead": {
+      "title": "近期新闻",
+      "description": "展示团队最新动态。",
+      "buttonLabel": "查看新闻",
+      "href": "/news"
+    },
+    "membersLead": {
+      "title": "团队成员",
+      "description": "展示成员分组、个人简介和详情页。",
+      "buttonLabel": "查看成员",
+      "href": "/members"
+    },
+    "recruitmentLead": {
+      "title": "加入我们",
+      "description": "用模拟招募信息展示页面结构。",
+      "buttonLabel": "查看招募",
+      "href": "/recruitment"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "关于这个网站框架",
+      "subtitle": "面向学术团队官网的可配置展示系统",
+      "description": "这里放置实验室愿景、研究文化、发展历程和合作方式。"
+    },
+    "introTitle": "实验室介绍",
+    "introText": [
+      "这个开源模板把前台展示和轻量后台编辑结合在一起，适合还没有数据库或 CMS 的小型学术团队。",
+      "内容保存在 content/site-content.json 中，上传图片保存在 public/uploads 中。你可以在后台编辑页面内容，也可以在代码仓库中维护模拟数据。",
+      "本版本使用模拟文字与 AI 生成的通用图片，不包含真实个人、机构、论文或联系方式。"
+    ],
+    "introImage": "/uploads/demo/campus-building.jpg",
+    "introImageAlt": "Generic modern campus building",
+    "introHighlights": [
+      {
+        "id": "about-highlight-1",
+        "title": "Content Driven",
+        "value": "内容驱动",
+        "caption": "页面内容集中放在 JSON 文件中，方便迁移、备份和版本管理。"
+      },
+      {
+        "id": "about-highlight-2",
+        "title": "Admin Editable",
+        "value": "后台可编辑",
+        "caption": "内置登录、内容保存和图片上传接口，适合小团队快速维护。"
+      },
+      {
+        "id": "about-highlight-3",
+        "title": "Research Ready",
+        "value": "学术场景友好",
+        "caption": "包含新闻、成员、研究方向、出版物、招募和联系方式等常用页面。"
+      }
+    ],
+    "timelineTitle": "发展历程",
+    "timelineSubtitle": "用于展示年份节点的模拟数据。",
+    "timeline": [
+      {
+        "id": "timeline-1",
+        "date": "2024",
+        "title": "模板初始化",
+        "description": "搭建前台页面、内容结构和后台登录。",
+        "image": "/uploads/demo/campus-building.jpg"
+      },
+      {
+        "id": "timeline-2",
+        "date": "2025",
+        "title": "内容模块扩展",
+        "description": "补充成员、新闻、出版物和研究方向页面。",
+        "image": "/uploads/demo/learning-analytics-lab.jpg"
+      },
+      {
+        "id": "timeline-3",
+        "date": "2026",
+        "title": "开源展示版本",
+        "description": "清理真实数据，替换为通用模拟内容与 demo 图片。",
+        "image": "/uploads/demo/seminar-workshop.jpg"
+      }
+    ],
+    "goalsTitle": "设计目标",
+    "goalsStatement": "让实验室网站可以快速搭建、轻松维护、便于二次开发。",
+    "goalsText": [
+      "模板优先保留清晰的信息架构，让访问者快速理解团队是谁、做什么、有哪些成果以及如何联系。",
+      "后台功能保持轻量，不依赖数据库，适合部署到简单服务器或作为进一步开发的起点。"
+    ],
+    "goalsCards": [
+      {
+        "id": "goal-1",
+        "title": "目标一",
+        "value": "易替换",
+        "caption": "所有模拟数据都可以替换成真实项目内容。"
+      },
+      {
+        "id": "goal-2",
+        "title": "目标二",
+        "value": "易维护",
+        "caption": "后台直接保存 JSON，适合小型团队运营。"
+      },
+      {
+        "id": "goal-3",
+        "title": "目标三",
+        "value": "易扩展",
+        "caption": "页面组件和数据类型清晰，便于继续加入多语言、搜索或数据库。"
+      }
+    ]
+  },
+  "news": {
+    "hero": {
+      "eyebrow": "News",
+      "title": "新闻与动态",
+      "subtitle": "模拟新闻、活动、项目和招募信息",
+      "description": "这里展示新闻列表、分类标签、详情页和归档机制。"
+    },
+    "archiveTitle": "新闻归档",
+    "archiveSubtitle": "超过设定时间的新闻可以被自动归档。",
+    "items": [
+      {
+        "id": "news-1",
+        "slug": "demo-workshop",
+        "label": "活动",
+        "title": "示例工作坊：学习分析与智能反馈",
+        "date": "2026-03-20",
+        "summary": "一条用于展示新闻样式的模拟活动信息。",
+        "content": [
+          "这是一条模拟新闻，可用于检查新闻详情页的排版、段落间距和相关链接。",
+          "你可以在后台修改标题、日期、分类、摘要、正文、封面图和是否显示。"
+        ],
+        "image": "/uploads/demo/seminar-workshop.jpg",
+        "relatedLink": "/research",
+        "pinned": true,
+        "visible": true
+      },
+      {
+        "id": "news-2",
+        "slug": "demo-dashboard",
+        "label": "项目",
+        "title": "示例项目启动：课堂数据仪表盘",
+        "date": "2026-03-06",
+        "summary": "展示如何把项目进展作为新闻发布。",
+        "content": [
+          "本条内容用于模拟项目启动新闻，适合替换成真实课题、合作或系统开发进展。",
+          "封面图使用开源 demo 资产，发布前请替换成你的真实素材。"
+        ],
+        "image": "/uploads/demo/learning-analytics-lab.jpg",
+        "relatedLink": "/publications",
+        "pinned": false,
+        "visible": true
+      },
+      {
+        "id": "news-3",
+        "slug": "demo-collaboration",
+        "label": "合作",
+        "title": "示例合作：跨学科教学研究",
+        "date": "2026-02-18",
+        "summary": "模拟团队与外部伙伴的合作动态。",
+        "content": [
+          "这里可以写合作背景、研究主题、参与对象和后续计划。",
+          "模板不会绑定任何真实机构名称，适合作为开源展示数据。"
+        ],
+        "image": "/uploads/demo/campus-building.jpg",
+        "pinned": false,
+        "visible": true
+      },
+      {
+        "id": "news-4",
+        "slug": "demo-recruitment",
+        "label": "招募",
+        "title": "示例招募：研究助理与学生成员",
+        "date": "2026-01-28",
+        "summary": "模拟招募信息和报名说明。",
+        "content": [
+          "本条新闻可指向招募页面，用于展示跨页面内容组织方式。",
+          "你可以根据实际团队需求调整招募对象、条件、流程和联系方式。"
+        ],
+        "image": "/uploads/demo/member-portrait.jpg",
+        "relatedLink": "/recruitment",
+        "pinned": false,
+        "visible": true
+      }
+    ],
+    "archivedItems": []
+  },
+  "members": {
+    "hero": {
+      "eyebrow": "Members",
+      "title": "团队成员",
+      "subtitle": "模拟成员分组与个人详情页",
+      "description": "可展示教师、学生、访问者、合作者等不同类型成员。"
+    },
+    "groups": [
+      {
+        "id": "faculty",
+        "title": "教师",
+        "items": [
+          {
+            "id": "member-1",
+            "slug": "demo-professor",
+            "name": "Demo Professor",
+            "title": "Principal Investigator",
+            "image": "/uploads/demo/member-portrait.jpg",
+            "birthDate": "",
+            "hometown": "",
+            "researchAreas": ["Learning Analytics", "AI in Education"],
+            "email": "pi@example.edu",
+            "phone": "",
+            "profileLink": "",
+            "summary": "A generic profile used to demonstrate member cards, tags, contact fields, and detail pages.",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "students",
+        "title": "学生",
+        "items": [
+          {
+            "id": "member-2",
+            "slug": "demo-phd-student",
+            "name": "Demo PhD Student",
+            "title": "PhD Student",
+            "image": "/uploads/demo/member-portrait.jpg",
+            "researchAreas": ["Dashboard Design", "Feedback"],
+            "email": "student@example.edu",
+            "summary": "A simulated doctoral student profile for template display.",
+            "visible": true
+          },
+          {
+            "id": "member-3",
+            "slug": "demo-master-student",
+            "name": "Demo Master Student",
+            "title": "Master Student",
+            "image": "/uploads/demo/member-portrait.jpg",
+            "researchAreas": ["Educational Robotics", "Interaction"],
+            "email": "master@example.edu",
+            "summary": "A simulated master student profile for template display.",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "collaborators",
+        "title": "合作者",
+        "items": [
+          {
+            "id": "member-4",
+            "slug": "demo-collaborator",
+            "name": "Demo Collaborator",
+            "title": "Research Collaborator",
+            "image": "/uploads/demo/member-portrait.jpg",
+            "researchAreas": ["Curriculum Research", "Evaluation"],
+            "email": "partner@example.edu",
+            "summary": "A simulated collaborator profile for template display.",
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "research": {
+    "hero": {
+      "eyebrow": "Research",
+      "title": "研究内容",
+      "subtitle": "研究方向与项目组织方式",
+      "description": "用模拟内容展示研究方向卡片、项目卡片、标签和图片。"
+    },
+    "directionsTitle": "研究方向",
+    "projectsTitle": "研究项目",
+    "directions": [
+      {
+        "id": "direction-1",
+        "title": "学习分析",
+        "summary": "围绕学习行为数据、课堂仪表盘和反馈机制开展研究。",
+        "tags": ["数据分析", "学习反馈", "仪表盘"],
+        "image": "/uploads/demo/learning-analytics-lab.jpg",
+        "link": "",
+        "visible": true
+      },
+      {
+        "id": "direction-2",
+        "title": "智能辅学系统",
+        "summary": "探索智能助教、个性化推荐和学习过程支持。",
+        "tags": ["智能助教", "个性化", "学习支持"],
+        "image": "/uploads/demo/seminar-workshop.jpg",
+        "link": "",
+        "visible": true
+      },
+      {
+        "id": "direction-3",
+        "title": "教育机器人",
+        "summary": "研究机器人在知识传授、互动活动和技能训练中的作用。",
+        "tags": ["机器人", "课堂互动", "实践学习"],
+        "image": "/uploads/demo/education-robotics.jpg",
+        "link": "",
+        "visible": true
+      },
+      {
+        "id": "direction-4",
+        "title": "沉浸式学习环境",
+        "summary": "使用 VR/AR 与多模态设备构建更具体验感的学习场景。",
+        "tags": ["VR", "AR", "多模态"],
+        "image": "/uploads/demo/vr-learning.jpg",
+        "link": "",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-1",
+        "title": "课堂数据仪表盘模板",
+        "summary": "模拟项目：把学习数据可视化为教师可读的课堂支持信息。",
+        "tags": ["Dashboard", "Analytics"],
+        "image": "/uploads/demo/learning-analytics-lab.jpg",
+        "link": "",
+        "visible": true
+      },
+      {
+        "id": "project-2",
+        "title": "机器人协作学习活动",
+        "summary": "模拟项目：展示教育机器人研究项目的卡片样式。",
+        "tags": ["Robotics", "Interaction"],
+        "image": "/uploads/demo/education-robotics.jpg",
+        "link": "",
+        "visible": true
+      },
+      {
+        "id": "project-3",
+        "title": "健康传感器学习支持",
+        "summary": "模拟项目：展示穿戴设备和学习支持的跨领域研究。",
+        "tags": ["Sensor", "Wellbeing"],
+        "image": "/uploads/demo/health-sensors.jpg",
+        "link": "",
+        "visible": true
+      }
+    ]
+  },
+  "publications": {
+    "hero": {
+      "eyebrow": "Publications",
+      "title": "出版物",
+      "subtitle": "模拟成果目录",
+      "description": "展示论文、会议、著作和项目成果的目录结构。"
+    },
+    "groups": [
+      {
+        "id": "journal-papers",
+        "title": "期刊论文",
+        "icon": "刊",
+        "summary": "模拟期刊论文记录",
+        "items": [
+          {
+            "id": "pub-1",
+            "title": "A Demo Study on Learning Analytics Dashboards",
+            "subtitle": "Demo Author A, Demo Author B",
+            "meta": "Journal of Demo Educational Technology, 2026",
+            "summary": "A simulated publication record for layout testing.",
+            "link": "",
+            "visible": true
+          },
+          {
+            "id": "pub-2",
+            "title": "Designing Feedback Tools for Classroom Learning",
+            "subtitle": "Demo Author C",
+            "meta": "Open Lab Template Journal, 2025",
+            "summary": "A second simulated publication record.",
+            "link": "",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "conference-papers",
+        "title": "会议论文",
+        "icon": "会",
+        "summary": "模拟会议论文记录",
+        "items": [
+          {
+            "id": "pub-3",
+            "title": "A Prototype for AI-Supported Learning Reflection",
+            "subtitle": "Demo Author D",
+            "meta": "Proceedings of Demo Learning Conference, 2026",
+            "summary": "A simulated conference record.",
+            "link": "",
+            "visible": true
+          }
+        ]
+      },
+      {
+        "id": "projects",
+        "title": "项目成果",
+        "icon": "项",
+        "summary": "模拟项目与报告记录",
+        "items": [
+          {
+            "id": "pub-4",
+            "title": "Open Lab Website Starter Report",
+            "subtitle": "Template Team",
+            "meta": "Demo Report, 2026",
+            "summary": "A simulated project report entry.",
+            "link": "",
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "recruitment": {
+    "hero": {
+      "eyebrow": "Join Us",
+      "title": "加入我们",
+      "subtitle": "模拟招募页面",
+      "description": "用通用文字展示招募对象、能力要求、成长方向和联系入口。"
+    },
+    "intro": [
+      "本页面用于展示研究团队招募信息的排版方式，所有内容均为模拟数据。",
+      "你可以在后台修改招募对象、说明、条件、成长模块和联系入口。"
+    ],
+    "audience": {
+      "title": "我们在找谁",
+      "intro": "以下为模拟招募条件：",
+      "points": [
+        "对教育技术、学习分析或人工智能教育应用感兴趣",
+        "愿意参与真实场景中的问题分析、原型设计与系统验证",
+        "具备编程、数据分析、设计研究或写作表达中的任一能力",
+        "能够在跨学科团队中沟通协作",
+        "愿意持续学习并把研究成果公开表达"
+      ],
+      "note": "欢迎把这里替换成真实招募要求、申请方式和截止日期。"
+    },
+    "growth": {
+      "title": "你将获得什么",
+      "intro": "以下模块用于展示团队可以提供的成长支持。",
+      "cards": [
+        {
+          "id": "growth-1",
+          "title": "研究训练",
+          "items": ["学习如何提出研究问题", "整理文献与数据", "形成清晰的研究表达"]
+        },
+        {
+          "id": "growth-2",
+          "title": "系统实践",
+          "items": ["参与原型设计", "理解前后端协作", "把想法验证到可用工具中"]
+        },
+        {
+          "id": "growth-3",
+          "title": "学术交流",
+          "items": ["参与组会汇报", "准备展示材料", "学习开放协作方式"]
+        }
+      ]
+    },
+    "callToAction": {
+      "title": "联系入口",
+      "content": "请将这里替换成真实的申请邮箱、表单链接或项目主页。",
+      "linkLabel": "查看联系方式",
+      "href": "/contact"
+    },
+    "cards": [],
+    "notes": []
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "服务与资源",
+      "subtitle": "可选页面数据",
+      "description": "当前模板未默认展示服务页，但保留数据结构供扩展。"
+    },
+    "groups": [
+      {
+        "id": "resources",
+        "title": "资源",
+        "icon": "资",
+        "summary": "模拟资源目录",
+        "items": [
+          {
+            "id": "service-1",
+            "title": "Demo Resource",
+            "subtitle": "Template resource item",
+            "meta": "Open template",
+            "summary": "A placeholder service/resource record.",
+            "link": "",
+            "visible": true
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "联系方式",
+      "subtitle": "模拟联系信息",
+      "description": "请在正式使用前替换成真实邮箱、地址和社交链接。"
+    },
+    "methods": [
+      {
+        "id": "email",
+        "label": "邮箱",
+        "value": "hello@example.edu",
+        "note": "示例邮箱，请替换。"
+      },
+      {
+        "id": "address",
+        "label": "地址",
+        "value": "Demo Campus, Innovation Building, Room 000",
+        "note": "示例地址，请替换。"
+      }
+    ],
+    "mapImage": "/uploads/demo/campus-map.jpg",
+    "mapAlt": "Generic campus map placeholder",
+    "transitTitle": "到访提示",
+    "transitText": [
+      "这里可以填写地铁、公交、自驾或校内路线说明。",
+      "本模板不包含真实地理位置。"
+    ]
+  }
+}
