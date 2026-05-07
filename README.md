@@ -116,39 +116,6 @@ public/uploads/
 
 你可以通过后台修改内容，也可以直接编辑 JSON 文件。正式使用时，请替换所有模拟数据、演示图片、联系方式和页面文案。
 
-## 推送到 GitHub
-
-如果这是一个还没有初始化 Git 的项目，在项目根目录执行：
-
-```powershell
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/ouranar/edulab-cms-starter.git
-git push -u origin main
-```
-
-如果项目已经初始化过 Git，先检查当前远程地址：
-
-```powershell
-git remote -v
-```
-
-如需修改远程地址：
-
-```powershell
-git remote set-url origin https://github.com/ouranar/edulab-cms-starter.git
-```
-
-然后正常提交并推送即可：
-
-```powershell
-git add .
-git commit -m "Update project"
-git push
-```
-
 ## 开源许可
 
 本仓库当前包含 `LICENSE` 文件，使用 GPL-3.0 许可。后续如果你希望改用 MIT、Apache-2.0 或其他协议，请在正式协作前统一调整 `LICENSE` 与 `package.json` 中的许可字段。
